@@ -5,7 +5,7 @@ Currently completing the program at [42 Berlin](https://42berlin.de/), a peer-re
 
 ![C](https://img.shields.io/badge/C-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![C++](https://img.shields.io/badge/C++-5C6D7E?style=flat-square&logo=cplusplus&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
 
-**Open to junior roles in systems, embedded or backend with C or C++ · based in Berlin, available immediately for full-time positions**
+**Open to junior roles in systems, embedded systems or backend with C or C++ · based in Berlin, available immediately for full-time positions**
 
 ## Languages
 
@@ -18,11 +18,11 @@ German (native) · English (fluent) · French, Spanish, Chinese (basic)
 ![C](https://img.shields.io/badge/C-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white) ![kernel](https://img.shields.io/badge/-kernel-6B6B6B?style=flat-square) ![character device](https://img.shields.io/badge/-character%20device-6B6B6B?style=flat-square) ![concurrency](https://img.shields.io/badge/-concurrency-6B6B6B?style=flat-square) ![transactional state mutation](https://img.shields.io/badge/-transactional%20state%20mutation-6B6B6B?style=flat-square) ![workqueues](https://img.shields.io/badge/-workqueues-6B6B6B?style=flat-square) ![memory accounting](https://img.shields.io/badge/-memory%20accounting-6B6B6B?style=flat-square)
 
 > **What this is:** A loadable kernel module implementing a character device for Linux 6.12.105\
-> **Context:** industry-issued exercise\
+> **Context:** exercise\
 > **Dev time:** ~2.5 weeks, including environment setup and research\
 > **Team size:** solo
 
-What looks deceptively simple at the surface turns into a hog of complexity when taken seriously: write words to a queue, read them back, do some periodic logging. What could possibly go wrong?
+What looks deceptively simple turns into a hog of complexity when taken seriously: write words to a queue, read them back, do some periodic logging. What could possibly go wrong?
 
 Concepts:
 - Managing partial failures
@@ -32,7 +32,7 @@ Concepts:
 - Defining lock order
 - Counteracting timer drift
 - Clarifying under-specified semantics
-- Dealing with asynchronous contexts invalidating shared state
+- Dealing with asynchronous data mutations that invalidate shared state
 
 The README walks through every semantics decision, many implementation details, and states plainly what was tested and what wasn't.
 
@@ -40,7 +40,7 @@ The README walks through every semantics decision, many implementation details, 
 
 ![C++98](https://img.shields.io/badge/C++98-5C6D7E?style=flat-square&logo=cplusplus&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white) ![TCP](https://img.shields.io/badge/TCP-6B6B6B?style=flat-square) ![HTTP](https://img.shields.io/badge/HTTP-6B6B6B?style=flat-square)
 
-> **What this is:** An HTTP server built from scratch. No external libraries, only what the language gives you\
+> **What this is:** An HTTP server built from scratch: No third party libraries\
 > **Context:** school project\
 > **Dev time:** several months\
 > **Team size:** 3\
@@ -51,7 +51,8 @@ A small functional webserver based on HTTP/1.0.
 Features:
 - GET, HEAD, POST and DELETE methods
 - CGI
-- Handling multiple client requests with `poll()` and interleaved serving, remembering request state
+- Connection management with `poll()`
+- A non-blocking event loop with partial-request handling
 - Serving different websites on different interface/port pairs
 - Extensive configuration options
 
@@ -60,7 +61,7 @@ My contributions:
 - Template-based multi-level logging system
 - A well-documented buffer class as essential infrastructure for other parts of the program
 - An expandable, well-documented config-parser that emits descriptive error messages
-- Most LOC (I know, not a quality)
+- Most LOC (I know, not a quality metric)
 
 <details>
 <summary>webserv config error</summary>
@@ -71,7 +72,7 @@ My contributions:
 
 ### [Minishell](https://github.com/alneuma/minishell)
 
-![C99](https://img.shields.io/badge/C99-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
+![C](https://img.shields.io/badge/C-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
 
 > **What this is:** A small Unix shell\
 > **Context:** school project\
@@ -84,16 +85,16 @@ A mini shell, not a mini project
 Features:
 - Interactive prompt integrating GNU Readline
 - Signal handling, adjusted per context (prompt, heredoc, child processes)
-- Environment variables and expansion `$`, `$?`
+- Shell and environment variables, expansion and `$?`
 - PATH resolution
 - Redirection with `<`, `>` and `>>`
 - Heredocs
 - Quoting semantics for `"` and `'`
 - Limited globbing with `*`
 - Arbitrary pipe chains `a | b | c`
-- Logical operators `&&`, `||` and `()` for grouping/precedence only
+- Control operators `&&`, `||` and `()` for grouping/precedence only
 - Handling of syntactically invalid input, pointing out the first offending token
-- Several shell built-ins: `echo -n`, `pwd`, `cd`, `export`, `unset`, `env`, `exit`
+- Several shell built-ins: `echo -n`, `pwd`, `cd`, `export`, `unset`, `exit`
 
 My contributions:
 - Designed the entire architecture
