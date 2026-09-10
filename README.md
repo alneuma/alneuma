@@ -62,6 +62,13 @@ My contributions:
 - An expandable, well-documented config-parser that emits descriptive error messages
 - Most LOC (I know, not a quality)
 
+<details>
+<summary>webserv config error</summary>
+
+![webserv config error](images/webserv_config_error.png)
+
+</details>
+
 ### [Minishell](https://github.com/alneuma/minishell)
 
 ![C99](https://img.shields.io/badge/C99-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
