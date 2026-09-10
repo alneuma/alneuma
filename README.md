@@ -1,4 +1,4 @@
-# alneuma
+# Alrik Neumann
 
 Software developer focused on systems and kernel-level C.
 Currently completing the program at [42 Berlin](https://42berlin.de/), a peer-reviewed, project-only curriculum without teachers but a lot of self-directed learning.
