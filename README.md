@@ -1,6 +1,6 @@
 # Alrik Neumann
 
-Software developer focused on systems and kernel-level C.
+Software developer focused low level C programming.
 Currently completing the program at [42 Berlin](https://42berlin.de/), a peer-reviewed, project-only curriculum without teachers but a lot of self-directed learning.
 
 ![C](https://img.shields.io/badge/C-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![C++](https://img.shields.io/badge/C++-5C6D7E?style=flat-square&logo=cplusplus&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
