@@ -5,7 +5,7 @@ Currently completing the program at [42 Berlin](https://42berlin.de/), a peer-re
 
 ![C](https://img.shields.io/badge/C-5C6D7E?style=flat-square&logo=c&logoColor=A8B9CC) ![C++](https://img.shields.io/badge/C++-5C6D7E?style=flat-square&logo=cplusplus&logoColor=A8B9CC) ![Linux](https://img.shields.io/badge/Linux-2C6BED?style=flat-square&logo=linux&logoColor=white)
 
-**Open to junior roles in systems, embedded systems or backend with C or C++ · based in Berlin, available immediately for full-time positions**
+**Open to entry level roles in systems, embedded systems or backend with C or C++ · based in Berlin, available immediately for full-time positions**
 
 ## Languages
 
