@@ -34,7 +34,7 @@ Concepts:
 - Clarifying under-specified semantics
 - Dealing with asynchronous data mutations that invalidate shared state
 
-The README walks through every semantics decision, many implementation details, and states plainly what was tested and what wasn't.
+The README walks through every semantics decision, many implementation details, and states what was tested and what wasn't.
 
 ### [Webserv](https://github.com/jhelbig42/webserv)
 
@@ -104,7 +104,7 @@ My contributions:
 
 - Writing code is how I organize my thoughts.
 - Some challenges are still best solved off screen.
-- Deep-diving into unfamiliar territory and complex challenges is what I love best.
+- Deep-diving into unfamiliar territory and complex challenges is what I love.
 - After every idea for how to make it work, ask: what could go wrong?
 - Almost daily peer code reviews at my school. We all mentor each other.
 
